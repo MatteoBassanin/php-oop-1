@@ -1,17 +1,26 @@
 <?php
 
 require __DIR__  . "/Models/Movie.php";
+require __DIR__  . "/Models/Genre.php";
+
+$generi = [
+    new Genre("adventure"),
+    new Genre("action"),
+];
+
+$jumanji = new Movie("Jumanji",$generi,"1995","	Joe Johnston","104 minutes");
+$matrix = new Movie("Matrix",$generi,"1999","Andy e Larry Wachowski","	136 minutes");
 
 
-$jumanji = new Movie("Jumanji","adventure","1995","	Joe Johnston","104 minutes");
-$matrix = new Movie("Matrix","action","1999","Andy e Larry Wachowski","	136 minutes");
 
 
 
 
 echo $jumanji->getAllData();
+echo $jumanji->getGenres();
 echo "</br>";
 echo $matrix->getAllData();
+echo $matrix->getGenres();
 
 ?>
 
