@@ -15,13 +15,6 @@ $matrix = new Movie("Matrix",$generi,"1999","Andy e Larry Wachowski","	136 minut
 $movies = [$jumanji,$matrix];
 
 
-
-echo $jumanji->getAllData();
-echo $jumanji->getGenres();
-echo "</br>";
-echo $matrix->getAllData();
-echo $matrix->getGenres();
-
 ?>
 
 
